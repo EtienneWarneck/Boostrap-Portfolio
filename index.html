@@ -5,69 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Bootstrap Portfolio</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        @media screen and (max-width: 400px) {
+
+            body {
+                padding: 20px;
+                margin: 20px;
+                background-color: #333;
+            }
+
+            .wrapper {
+                width: 600px;
+            }
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-white border-bottom" role="navigation">
-        <div class="container">
-            <div class="navbar-header ml-n3 p-3 text-center text-white">
-                Etienne Warneck
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+        <a class="navbar-brand ml-lg-5 ml-sm-5" href="#">
+            <h1>Etienne Warneck</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end mr-lg-5" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active " href="#">About</span></a>
+                <a class="nav-item nav-link" href="#">Portfolio</a>
+                <a class="nav-item nav-link" href="#">Contact</a>
             </div>
-
-            <div class="ml-auto ">
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup"
-                    style="height:80px; width:250px; border: 1 solid red;">
-
-                    <div class="navbar-nav content-center-right ">
-                        <a class="nav-item nav-link active" href="#">About</a>
-                        <a class="nav-item nav-link" href="#">Portfolio</a>
-                        <a class="nav-item nav-link" href="#">Contact</a>
-                    </div>
-                </div>
-            </div>
-
+        </div>
     </nav>
 
-    </div>
-    <ul style="border:1px solid #dddddd; width:100%;"></ul>
-
-    <div class="container bg-white" style="width:960px;">
-        <div class="row">
-            <div class="col-sm-4 p-3"
-                style="height:80px; font-size:30px; font-family: 'Georgia', Times, Times New Roman, serif; color:#4abbb5">
-                About Me</div>
-            <div class="col-sm-8"></div>
-        </div>
+    <div class="container mt-5" id="header">
+        <h2 class="display-4 d-flex col-sm-12">About Me</h2>
     </div>
 
-    <div class="container bg-white" style="width:960px;">
-        <div class="row">
-            <img class="col-sm-3" src="/IMG_8367.jpg" alt="..." class="thumbnail"
-                style="width:200px; height:270px; float: left;">
-
-            <div class="col-sm-8 text-wrap"
-                style="font-size: 17px; line-height: 35px; font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; color: #777777;">
-                Hi! My name is Etienne and I am currently enrolled in a Coding Bootcamp for
-                Full-Stack Development at Columbia University/Trilogy.
-                I am interested in becoming a web developer to work on web design, development and interactive 3D
-                content.
-                <br>
-                Previously, I have taken courses in Javascript, SQL and Java and I have a Certificate in 3D Design and
-                Fabrication (3D Printing) from NYU and some familiarity with 3D softwares (Cinema 4D and Zbrush).
-                <br>
-                For several years, I have also worked as an architectural photographer for clients such as architects,
-                start-ups, interior decorators, art galleries and graphic designers.</div>
-        </div>
-    </div>
 
     <ul style="border:1px solid #dddddd; width:100%;"></ul>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4 ">
+                    <img class="image-responsive" src="/IMG_8367.jpg" id="img-thumbnail" width="300px" height="397px"></img>
+                </div>
+                        
+            <div class="col-sm-12 col-lg-8 pt-5">
+                <p> Hi! My name is Etienne and I am currently enrolled in a Coding Bootcamp for
+                Full-Stack Development at Columbia University/Trilogy.</p>
+                <p> I am interested in becoming a web developer to work on web design, development and interactive 3D  content.</p>
+                <p> Recently, I have taken courses in Javascript, SQL and Java.
+                    
+            <p> In 2015, I received a Certificate in 3D Design and Fabrication (3D Printing) from NYU and I have some familiarity with 3D softwares used for motion graphics.</p>
+                <p> Previous experience as a photographer has also given me the opportunity to work with architectural studios,
+                    start-ups and art galleries.
+                </p>
+               
+            </div>
+        </div>
+    </div>
 
+<br>
+    <ul style="border:1px solid #dddddd; width:100%;"></ul>
 </body>
+
+
+
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+        <bold>Copyright &copy;</bold>
+    </div>
+</footer>
 
 </html>

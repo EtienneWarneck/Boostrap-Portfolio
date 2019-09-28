@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bootstrap Portfolio</title>
@@ -12,54 +13,62 @@
 </head>
 
 <body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container">
-            <div class="row"><a class="navbar-brand" href="#">
+            <div class="row"><a class="navbar-brand" href="index.html">
                     <h1>Etienne Warneck</h1>
                 </a>
             </div>
 
             <div class="container">
                 <button class="navbar-toggler col-sm-auto " type="button" data-toggle="collapse"
-                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="true"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active " href="#">About</span></a>
-                    <a class="nav-item nav-link" href="#">Portfolio</a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
+                    <a class="nav-item nav-link active " href="index.html">About</span></a>
+                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-item nav-link" href="portfolio.html">Contact</a>
                 </div>
             </div>
     </nav>
 
     <div class="container mt-5" id="header">
-        <h2 class="display-4 d-flex col-12">About Me</h2>
+        <h2 class="display-4  col-12">About Me</h2>
     </div>
 
     <ul style="border:1px solid #dddddd; width:100%;"></ul>
 
-    <div class="container  bg-dark ">
+    <div class="container bg-dark">
         <div class="row">
 
-            <div class="image col-lg-4 col-sm-12 mt-3 mb-3">
-                <img src="/IMG_8367.jpg" class="img-fluid" alt="Responsive image" >
+            <div class="image col-lg-4  col-sm-12 mt-3 mb-3">
+                <img src="/IMG_8367.jpg" class="img-fluid" alt="Responsive image">
             </div>
 
-            <div class="text col-lg-8 col-sm-12 mt-4 display-5 text-light">
+            <div class="text image col-lg-8 col-sm-12 mt-4 display-5 text-light">
                 <div class="text">
                     <p> Hi! My name is Etienne and I am currently enrolled in a Coding Bootcamp for
                         Full-Stack Development at Columbia University/Trilogy.</p>
-                    <p> I have taken courses in Javascript, SQL and Java recently and I am interested in becoming a
-                        developer to
-                        work on interactive 3D content for the web.</p>
+                    <p> I am interested in becoming a developer to
+                        work on front-end and interactive 3D content for the web.</p>
                     <p> Previous experience as a photographer has given me the opportunity to work with architectural
-                        studios, start-ups specialized in interactive 3D and contemporary art galleries.</p>
-                    <p> I am also a visual artist making painting and sculptures using 3D softwares.</p>
+                        studios, start-ups specialized in interactive visualization and art galleries.</p>
+                    <p> I am also a visual artist making paintings and sculptures based on 3D computer models.</p>
                 </div>
             </div>
         </div>
@@ -71,7 +80,7 @@
 </body>
 
 <footer class="container">
-    <div class="container-fluid text-center fixed-bottom bg-dark text-light  p-1">
+    <div class="container-fluid text-center fixed-bottom bg-dark text-light p-1">
         <p>Copyright ©</p>
     </div>
 </footer>

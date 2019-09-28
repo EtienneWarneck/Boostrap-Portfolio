@@ -1,10 +1,4 @@
-/* body {
-    margin: 0px;
-}
- */
-
-
-
+ 
 .text {
     font-size: 23px;
 }
@@ -15,26 +9,41 @@
     margin-bottom: 0px;
     left: 0;
     width: 100%;
-    border: 2px solid red;
+    border: 20px solid red;
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px) {
-
+@media (max-width: 768px) {
+    h2 {
+        text-align: center;
+    }
     .container-toggler {
         width: 100%;
-        float: none;
-        margin-right: 0;
-        color: red;
+        /* margin-right: 0; */
     }
- 
-    .navbar-brand {
-        padding-left: 70px;
-}
-
-    .image {
-        border: 1px solid red;
+    h1 {
+        border-top: 10px solid blue;
+        margin: 0 auto;
+        width: 100px;
+    }
+    .img-fluid {
+        /* border: 10px solid red; */
         width: 100%;
         height: 265px;
         align-content: center;
     }
+    .img-1 {
+        margin: 0;
+        padding-left: 0;
+        width: 100%;
+       
+    }
+
+    footer .container-fluid {
+        border-top: 1px solid #ffffff;
+    }
+
+    #formGroupExampleInput2 {
+        padding-bottom: 50px;
+    }
+  
 }
